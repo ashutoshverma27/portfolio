@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ashutosh Verma | Senior Software Engineer</title>
   <meta name="description" content="Ashutosh Verma is a backend-focused Senior Software Engineer building Java, Spring Boot and Kafka-based systems for Realtor.com and UpNest." />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#f6f4ef" />
   <meta property="og:title" content="Ashutosh Verma | Senior Software Engineer" />
-  <meta property="og:description" content="Backend-focused Senior Software Engineer: Java, Spring Boot, Kafka, AWS." />
+  <meta property="og:description" content="Backend engineer building the systems behind real estate platforms. Java, Spring Boot, Kafka, AWS." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
@@ -31,200 +31,357 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
+  <!-- ===== Header ===== -->
   <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="#" class="brand">Ashutosh Verma</a>
+    <div class="wrap topbar-inner">
+      <a href="#" class="brand" aria-label="Ashutosh Verma, home">
+        <span class="brand-mark">AV</span>
+        <span class="brand-name">Ashutosh Verma</span>
+      </a>
       <nav aria-label="Primary">
         <ul class="nav">
-          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#stack">Tech Stack</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <a class="btn btn-small btn-dark" href="assets/Ashutosh_Verma_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
     </div>
   </header>
 
-  <main id="main" class="container">
+  <main id="main">
 
-    <!-- Intro -->
-    <section class="intro">
-      <p class="eyebrow">Senior Software Engineer · Backend</p>
-      <h1>Ashutosh Verma</h1>
-      <p class="lead">
-        I design and build REST APIs and event-driven microservices for real estate platforms,
-        working mainly with Java, Spring Boot, Apache Kafka and AWS.
-      </p>
-      <p class="meta">
-        Noida, India · Open to relocation: Gurugram, Bangalore, Hyderabad, Pune, Chennai
-      </p>
-      <div class="actions">
-        <a class="btn btn-primary" href="assets/Ashutosh_Verma_Resume.pdf" target="_blank" rel="noopener">View résumé</a>
-        <a class="btn btn-secondary" href="mailto:ashutoshverma2799@gmail.com">Get in touch</a>
-        <span class="links">
-          <a href="https://linkedin.com/in/ashutosh-verma27" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/ashutoshverma27" target="_blank" rel="noopener">GitHub</a>
-        </span>
+    <!-- ===== Hero ===== -->
+    <section class="hero wrap">
+      <div class="hero-main">
+        <p class="kicker"><span class="kicker-dot" aria-hidden="true"></span>Senior Software Engineer at Tavant Technologies</p>
+        <h1>I build the backend systems behind real estate platforms used by <span class="hl">thousands of agents</span> every day.</h1>
+        <p class="hero-sub">
+          5.2 years of designing REST APIs and event-driven microservices in Java, Spring Boot and
+          Apache Kafka for Realtor.com and UpNest.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-accent" href="#work">See selected work</a>
+          <a class="btn btn-line" href="mailto:ashutoshverma2799@gmail.com">ashutoshverma2799@gmail.com</a>
+        </div>
       </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <h2 class="section-title">About</h2>
-      <div class="section-body">
-        <p>
-          I'm a backend-focused Senior Software Engineer with 5.2 years of experience building server-side
-          systems for real estate and proptech platforms, including Realtor.com and UpNest. I specialize in
-          Java, Spring Boot, Spring Security and Hibernate ORM, and I build secure, event-driven
-          microservices on relational databases such as MySQL and MariaDB in multi-tenant environments.
-        </p>
-        <p>
-          My recent work includes modernizing legacy Struts2 / Spring MVC monoliths into cloud-native
-          services on AWS with Apache Kafka, and building matching services that score and rank agents
-          against incoming consumer leads. I work in Agile/Scrum teams with CircleCI CI/CD and SonarCloud
-          quality gates.
-        </p>
-
-        <dl class="figures">
-          <div><dt>7,300+</dt><dd>Active agents supported</dd></div>
-          <div><dt>50,000+</dt><dd>Proposals per month</dd></div>
-          <div><dt>100,000+</dt><dd>API requests per day</dd></div>
-          <div><dt>60%</dt><dd>Smaller API payloads</dd></div>
+      <aside class="hero-card" aria-label="Quick facts">
+        <dl>
+          <div><dt>Based in</dt><dd>Noida, India</dd></div>
+          <div><dt>Focus</dt><dd>Backend &amp; distributed systems</dd></div>
+          <div><dt>Core stack</dt><dd>Java · Spring Boot · Kafka · AWS</dd></div>
+          <div><dt>Open to</dt><dd>Gurugram, Bangalore, Hyderabad, Pune, Chennai</dd></div>
         </dl>
-      </div>
+        <div class="hero-card-links">
+          <a href="https://linkedin.com/in/ashutosh-verma27" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/ashutoshverma27" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </aside>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <h2 class="section-title">Experience</h2>
-      <div class="section-body">
+    <!-- ===== Clients strip ===== -->
+    <section class="clients wrap" aria-label="Companies and products">
+      <p class="clients-label">Companies &amp; products</p>
+      <ul class="clients-list">
+        <li>Realtor.com</li>
+        <li>UpNest</li>
+        <li>Tavant</li>
+        <li>TCS</li>
+      </ul>
+    </section>
 
-        <article class="role">
-          <header class="role-head">
-            <div>
-              <h3>Senior Software Engineer</h3>
-              <p class="org">Tavant Technologies · Noida, India</p>
-            </div>
-            <p class="dates">Apr 2022 – Present</p>
-          </header>
-          <p class="note">Tavant Excellence Award recipient, 2023 and 2025</p>
+    <!-- ===== Numbers ===== -->
+    <section class="numbers wrap" aria-label="Impact in numbers">
+      <div class="num"><strong>7,300+</strong><span>active agents on the platform I helped build</span></div>
+      <div class="num"><strong>50K+</strong><span>proposals generated each month</span></div>
+      <div class="num"><strong>100K+</strong><span>API requests served every day</span></div>
+      <div class="num"><strong>60%</strong><span>smaller API payloads after modernization</span></div>
+    </section>
 
-          <div class="project">
-            <h4>RCS Engine <span>Realtor.com, USA</span></h4>
-            <ul>
-              <li>Developed the RCS Engine platform, a multi-service system comprising Proposals, Users, Authentication and API Gateway services, supporting 7,300+ active agents and 50,000+ monthly proposals.</li>
-              <li>Designed a dual-store migration layer that reads legacy agent templates from a MySQL database and automatically provisions them into DynamoDB on first access, eliminating the need for a manual migration of 7,300+ agent records.</li>
-              <li>Implemented event-driven proposal readiness recalculation using Apache Kafka, keeping completeness scores synchronized in near real time after template updates and replacing a stale batch-refresh model.</li>
-            </ul>
-          </div>
+    <!-- ===== Selected work ===== -->
+    <section id="work" class="section wrap">
+      <header class="section-head">
+        <p class="section-no">01</p>
+        <h2>Selected work</h2>
+        <p class="section-intro">Three systems I've designed and shipped. Each one solved a different kind of problem.</p>
+      </header>
 
-          <div class="project">
-            <h4>Unified Communication Service <span>Realtor.com, USA</span></h4>
-            <ul>
-              <li>Built a communication platform using Java 17 and Spring Boot with Hibernate ORM, exposing REST APIs and serving over 100,000 requests daily with transaction management backed by MySQL.</li>
-              <li>Integrated with downstream microservices to aggregate data and provide client-tailored responses, reducing UI network overhead.</li>
-              <li>Optimized MySQL schemas and query execution plans with composite indexing, reducing dashboard report generation times by 40%.</li>
-              <li>Enforced Spring Security with JWT validation; used AWS DynamoDB for low-latency audit logging and AWS Secrets Manager for environment configuration.</li>
-              <li>Engineered asynchronous processing with Apache Kafka and Dead Letter Queues to minimize transactional loss during downstream service downtime.</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <h4>UpNest Platform Modernization <span>UpNest.com, USA</span></h4>
-            <ul>
-              <li>Built and deployed an ONNX-based machine-learning matching model in a Java service to score and rank agents for incoming leads, released through a controlled A/B test to 25% of production traffic.</li>
-              <li>Integrated Okta SSO / SAML authentication for advisors and admins, including identity aliasing to map Okta and internal accounts.</li>
-              <li>Worked on a Strangler Fig migration to break down a legacy Struts2 / Spring MVC monolith into modular Spring services with REST APIs, reducing API response payload sizes by 60% (from 2.5 MB to 1 MB).</li>
-              <li>Designed dual-write strategies to keep legacy systems and modern MariaDB cloud databases synchronized, maintaining data integrity during phased deployment.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="role">
-          <header class="role-head">
-            <div>
-              <h3>Assistant Systems Engineer Trainee</h3>
-              <p class="org">Tata Consultancy Services · Gurgaon, India</p>
-            </div>
-            <p class="dates">Aug 2021 – Apr 2022</p>
-          </header>
-          <ul>
-            <li>Developed responsive UI features using ReactJS, improving front-to-back page load speeds by 25% within an Agile sprint cadence while collaborating with Java backend teams on contract-first REST API integrations.</li>
-            <li>Wrote Jest unit tests for UI components, maintaining over 80% test coverage across the module.</li>
+      <!-- Case 1 -->
+      <article class="case">
+        <div class="case-text">
+          <p class="case-meta">Realtor.com · Tavant</p>
+          <h3>RCS Engine</h3>
+          <p class="case-summary">
+            A multi-service platform (Proposals, Users, Authentication and API Gateway) that
+            supports 7,300+ active agents and 50,000+ proposals a month.
+          </p>
+          <ul class="case-points">
+            <li><strong>Migration without downtime.</strong> A dual-store layer reads legacy agent templates from MySQL and copies them into DynamoDB the first time they're used. No manual migration of 7,300+ agent records was needed.</li>
+            <li><strong>Scores that stay current.</strong> Kafka events recalculate proposal readiness when a template changes, replacing a batch job that left scores out of date.</li>
           </ul>
-        </article>
+          <ul class="tags"><li>Kafka</li><li>DynamoDB</li><li>MySQL</li><li>Microservices</li></ul>
+        </div>
+        <figure class="case-figure">
+          <svg class="dg" viewBox="0 0 480 290" role="img" aria-label="Architecture: API Gateway routes to Proposals, Users and Auth services. Proposals publish to Kafka, which updates DynamoDB. Legacy MySQL data migrates to DynamoDB on first read.">
+            <defs>
+              <marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ah"/></marker>
+            </defs>
+            <path class="ln" d="M136 145 H160 V66 H182" marker-end="url(#ah1)"/>
+            <path class="ln" d="M136 145 H182" marker-end="url(#ah1)"/>
+            <path class="ln" d="M136 145 H160 V224 H182" marker-end="url(#ah1)"/>
+            <path class="ln" d="M296 66 H342" marker-end="url(#ah1)"/>
+            <path class="ln" d="M296 145 H342" marker-end="url(#ah1)"/>
+            <path class="ln" d="M400 88 V121" marker-end="url(#ah1)"/>
+            <path class="ln dash" d="M400 202 V169" marker-end="url(#ah1)"/>
 
+            <rect class="bx" x="24" y="123" width="112" height="44" rx="8"/>
+            <text class="tx" x="80" y="150">API Gateway</text>
+            <rect class="bx" x="184" y="44" width="112" height="44" rx="8"/>
+            <text class="tx" x="240" y="71">Proposals</text>
+            <rect class="bx" x="184" y="123" width="112" height="44" rx="8"/>
+            <text class="tx" x="240" y="150">Users</text>
+            <rect class="bx" x="184" y="202" width="112" height="44" rx="8"/>
+            <text class="tx" x="240" y="229">Auth</text>
+            <rect class="bx acc" x="344" y="44" width="112" height="44" rx="8"/>
+            <text class="tx inv" x="400" y="71">Kafka</text>
+            <rect class="bx" x="344" y="123" width="112" height="44" rx="8"/>
+            <text class="tx" x="400" y="150">DynamoDB</text>
+            <rect class="bx dash" x="344" y="202" width="112" height="44" rx="8"/>
+            <text class="tx muted" x="400" y="229">MySQL (legacy)</text>
+            <text class="cap" x="408" y="110" text-anchor="start">readiness</text>
+            <text class="cap" x="408" y="190" text-anchor="start">on first read</text>
+          </svg>
+          <figcaption>Gateway, services and the event flow that keeps readiness scores current.</figcaption>
+        </figure>
+      </article>
+
+      <!-- Case 2 -->
+      <article class="case reverse">
+        <div class="case-text">
+          <p class="case-meta">Realtor.com · Tavant</p>
+          <h3>Unified Communication Service</h3>
+          <p class="case-summary">
+            A Java 17 / Spring Boot platform with REST APIs, serving more than 100,000 requests a day
+            with transaction management on MySQL.
+          </p>
+          <ul class="case-points">
+            <li><strong>Built for failure.</strong> Asynchronous processing on Kafka with Dead Letter Queues, so transactions aren't lost when downstream services are down.</li>
+            <li><strong>40% faster reports.</strong> Reworked MySQL schemas and query plans with composite indexes.</li>
+            <li><strong>Secure by default.</strong> Spring Security with JWT validation, DynamoDB audit logs and AWS Secrets Manager for configuration.</li>
+          </ul>
+          <ul class="tags"><li>Java 17</li><li>Spring Boot</li><li>Hibernate</li><li>Kafka</li><li>JWT</li></ul>
+        </div>
+        <figure class="case-figure">
+          <svg class="dg" viewBox="0 0 480 290" role="img" aria-label="Architecture: clients call a Spring Boot API secured with JWT. The API writes to MySQL and publishes to Kafka, which delivers to downstream services. Failed messages go to a dead letter queue.">
+            <defs>
+              <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ah"/></marker>
+            </defs>
+            <path class="ln" d="M124 145 H170" marker-end="url(#ah2)"/>
+            <path class="ln" d="M240 113 V66 H354" marker-end="url(#ah2)"/>
+            <path class="ln" d="M310 145 H354" marker-end="url(#ah2)"/>
+            <path class="ln" d="M406 167 V200" marker-end="url(#ah2)"/>
+            <path class="ln dash" d="M356 224 H300" marker-end="url(#ah2)"/>
+
+            <rect class="bx" x="24" y="123" width="100" height="44" rx="8"/>
+            <text class="tx" x="74" y="150">Clients</text>
+            <rect class="bx strong" x="172" y="113" width="138" height="64" rx="10"/>
+            <text class="tx" x="241" y="141">Spring Boot API</text>
+            <text class="cap c" x="241" y="160">JWT · Spring Security</text>
+            <rect class="bx" x="356" y="44" width="100" height="44" rx="8"/>
+            <text class="tx" x="406" y="71">MySQL</text>
+            <rect class="bx acc" x="356" y="123" width="100" height="44" rx="8"/>
+            <text class="tx inv" x="406" y="150">Kafka</text>
+            <rect class="bx" x="356" y="202" width="100" height="44" rx="8"/>
+            <text class="tx" x="406" y="229">Downstream</text>
+            <rect class="bx dash" x="198" y="202" width="100" height="44" rx="8"/>
+            <text class="tx muted" x="248" y="229">DLQ</text>
+            <text class="cap c" x="328" y="262">on failure</text>
+          </svg>
+          <figcaption>Requests, persistence, and a dead letter queue as a safety net.</figcaption>
+        </figure>
+      </article>
+
+      <!-- Case 3 -->
+      <article class="case">
+        <div class="case-text">
+          <p class="case-meta">UpNest.com · Tavant</p>
+          <h3>UpNest Platform Modernization</h3>
+          <p class="case-summary">
+            Breaking a legacy Struts2 / Spring MVC monolith into modular Spring services while the
+            product kept shipping.
+          </p>
+          <ul class="case-points">
+            <li><strong>ML agent matching.</strong> An ONNX model inside a Java service scores and ranks agents for incoming leads. It was released through an A/B test to 25% of production traffic.</li>
+            <li><strong>Strangler Fig migration.</strong> New REST services cut response payloads by 60%, and dual writes kept the legacy and MariaDB databases in sync during rollout.</li>
+            <li><strong>Enterprise SSO.</strong> Okta SSO / SAML for advisors and admins, with identity aliasing between Okta and internal accounts.</li>
+          </ul>
+          <ul class="tags"><li>Java</li><li>Spring</li><li>ONNX</li><li>Okta / SAML</li><li>MariaDB</li></ul>
+        </div>
+        <figure class="case-figure">
+          <svg class="dg" viewBox="0 0 480 290" role="img" aria-label="Diagram: a legacy monolith is split into three Spring services for matching, authentication and REST APIs. API payload size drops from 2.5 MB to 1.0 MB.">
+            <defs>
+              <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ah"/></marker>
+              <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" class="hatch"/></pattern>
+            </defs>
+            <rect class="bx" x="24" y="32" width="150" height="148" rx="10"/>
+            <rect x="24" y="32" width="150" height="148" rx="10" fill="url(#hatch)"/>
+            <rect class="label-bg" x="40" y="88" width="118" height="36" rx="6"/>
+            <text class="tx" x="99" y="104">Struts2 /</text>
+            <text class="tx" x="99" y="119">Spring MVC</text>
+
+            <path class="ln" d="M174 58 H288" marker-end="url(#ah3)"/>
+            <path class="ln" d="M174 106 H288" marker-end="url(#ah3)"/>
+            <path class="ln" d="M174 154 H288" marker-end="url(#ah3)"/>
+            <text class="cap c" x="231" y="24">Strangler Fig</text>
+
+            <rect class="bx" x="290" y="36" width="166" height="44" rx="8"/>
+            <text class="tx" x="373" y="63">Matching · ONNX</text>
+            <rect class="bx" x="290" y="84" width="166" height="44" rx="8"/>
+            <text class="tx" x="373" y="111">Auth · Okta SAML</text>
+            <rect class="bx" x="290" y="132" width="166" height="44" rx="8"/>
+            <text class="tx" x="373" y="159">REST services</text>
+
+            <text class="cap" x="24" y="230" text-anchor="start">Payload before</text>
+            <rect class="track" x="130" y="221" width="270" height="12" rx="6"/>
+            <rect class="bar-old" x="130" y="221" width="270" height="12" rx="6"/>
+            <text class="tx sm" x="456" y="231" text-anchor="end">2.5 MB</text>
+            <text class="cap" x="24" y="262" text-anchor="start">Payload after</text>
+            <rect class="track" x="130" y="253" width="270" height="12" rx="6"/>
+            <rect class="bar-new" x="130" y="253" width="108" height="12" rx="6"/>
+            <text class="tx sm" x="456" y="263" text-anchor="end">1.0 MB</text>
+          </svg>
+          <figcaption>Splitting the monolith one service at a time.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section wrap">
+      <header class="section-head">
+        <p class="section-no">02</p>
+        <h2>Experience</h2>
+      </header>
+
+      <ol class="jobs">
+        <li class="job">
+          <p class="job-dates">Apr 2022 – Present</p>
+          <div class="job-main">
+            <h3>Senior Software Engineer</h3>
+            <p class="job-org">Tavant Technologies · Noida, India</p>
+            <p class="job-desc">
+              Backend engineer on Realtor.com and UpNest products: the RCS Engine, the Unified Communication
+              Service, and the UpNest platform modernization. Twice recognized with the Tavant Excellence
+              Award (2023, 2025).
+            </p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-dates">Aug 2021 – Apr 2022</p>
+          <div class="job-main">
+            <h3>Assistant Systems Engineer Trainee</h3>
+            <p class="job-org">Tata Consultancy Services · Gurgaon, India</p>
+            <p class="job-desc">
+              Built responsive ReactJS features that made page loads 25% faster, working with Java backend
+              teams on contract-first REST APIs. Kept the module's Jest test coverage above 80%.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Tech stack ===== -->
+    <section id="stack" class="section wrap">
+      <header class="section-head">
+        <p class="section-no">03</p>
+        <h2>Tech Stack</h2>
+        <p class="section-intro">What I work with day to day, grouped by the problems it solves.</p>
+      </header>
+
+      <div class="caps">
+        <div class="cap-card">
+          <h3>Backend &amp; APIs</h3>
+          <p>REST APIs and services with clear contracts, transactions and tests.</p>
+          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Spring MVC</li><li>Spring Data JPA</li><li>Hibernate</li><li>Maven</li></ul>
+        </div>
+        <div class="cap-card">
+          <h3>Event-driven systems</h3>
+          <p>Asynchronous workflows that keep data in sync and recover from failure.</p>
+          <ul class="tags"><li>Apache Kafka</li><li>Dead Letter Queues</li><li>Microservices</li><li>Multithreading</li></ul>
+        </div>
+        <div class="cap-card">
+          <h3>Data</h3>
+          <p>Schema design, query tuning, and migrations between data stores.</p>
+          <ul class="tags"><li>MySQL</li><li>MariaDB</li><li>DynamoDB</li><li>Redis</li><li>SQL</li></ul>
+        </div>
+        <div class="cap-card">
+          <h3>Security &amp; identity</h3>
+          <p>Authentication, authorization and secrets management for multi-tenant systems.</p>
+          <ul class="tags"><li>Spring Security</li><li>JWT</li><li>Okta SSO / SAML</li><li>AWS Secrets Manager</li></ul>
+        </div>
+        <div class="cap-card">
+          <h3>Cloud &amp; delivery</h3>
+          <p>Shipping safely through CI/CD with quality gates.</p>
+          <ul class="tags"><li>AWS (S3, DynamoDB)</li><li>Docker</li><li>Git</li><li>CircleCI</li><li>SonarCloud</li></ul>
+        </div>
+        <div class="cap-card">
+          <h3>Testing &amp; tooling</h3>
+          <p>Unit tests, plus AI coding tools to speed up everyday work.</p>
+          <ul class="tags"><li>JUnit</li><li>Mockito</li><li>Jest</li><li>ReactJS</li><li>Claude Code</li><li>GitHub Copilot</li></ul>
+        </div>
       </div>
     </section>
 
-    <!-- Tech Stack -->
-    <section id="stack" class="section">
-      <h2 class="section-title">Tech Stack</h2>
-      <div class="section-body">
-        <dl class="skills">
-          <div><dt>Languages</dt><dd>Java, JavaScript, SQL</dd></div>
-          <div><dt>Backend &amp; APIs</dt><dd>Spring Boot, Spring MVC, Spring Data JPA, Hibernate ORM, REST APIs</dd></div>
-          <div><dt>Databases</dt><dd>MySQL, MariaDB, AWS DynamoDB, Redis</dd></div>
-          <div><dt>Architecture</dt><dd>Apache Kafka, Dead Letter Queues, Event-Driven Design, Microservices, System Design, Design Patterns, Multithreading</dd></div>
-          <div><dt>Security</dt><dd>Spring Security, JWT, Okta SSO / SAML, AWS Secrets Manager</dd></div>
-          <div><dt>Cloud &amp; DevOps</dt><dd>AWS (S3, DynamoDB, Secrets Manager), Docker, Git, CircleCI, SonarCloud, Maven</dd></div>
-          <div><dt>Frontend</dt><dd>ReactJS, JavaScript, HTML5, CSS3</dd></div>
-          <div><dt>Testing</dt><dd>JUnit, Mockito, Jest</dd></div>
-          <div><dt>Practices</dt><dd>Agile, Scrum, Code Review, Sprint Planning</dd></div>
-          <div><dt>AI Tools</dt><dd>Claude Code, GitHub Copilot, ChatGPT, Windsurf, Glean</dd></div>
-        </dl>
+    <!-- ===== Recognition ===== -->
+    <section class="section wrap">
+      <header class="section-head">
+        <p class="section-no">04</p>
+        <h2>Recognition &amp; education</h2>
+      </header>
+
+      <div class="awards">
+        <div class="award">
+          <p class="award-year">2025</p>
+          <h3>Tavant Excellence Award</h3>
+          <p>For agility and quick technical adaptation across shifting project requirements.</p>
+        </div>
+        <div class="award">
+          <p class="award-year">2023</p>
+          <h3>Tavant Excellence Award</h3>
+          <p>For core contributions to the modernization of the UpNest.com platform.</p>
+        </div>
+        <div class="award">
+          <p class="award-year">2021</p>
+          <h3>B.Tech, Computer Science</h3>
+          <p>Noida Institute of Engineering and Technology. First Class with Honours.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Awards & Education -->
-    <section class="section">
-      <h2 class="section-title">Awards &amp; Education</h2>
-      <div class="section-body">
-        <ul class="entries">
-          <li>
-            <div>
-              <h3>Tavant Excellence Award</h3>
-              <p>Recognized for agility and quick technical adaptation across shifting project requirements.</p>
-            </div>
-            <p class="dates">Dec 2025</p>
-          </li>
-          <li>
-            <div>
-              <h3>Tavant Excellence Award</h3>
-              <p>Awarded for core contributions to the modernization of the UpNest.com platform.</p>
-            </div>
-            <p class="dates">Oct 2023</p>
-          </li>
-          <li>
-            <div>
-              <h3>B.Tech, Computer Science and Engineering</h3>
-              <p>Noida Institute of Engineering and Technology · First Class with Honours</p>
-            </div>
-            <p class="dates">2017 – 2021</p>
-          </li>
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="contact">
+      <div class="wrap contact-inner">
+        <p class="section-no light">05</p>
+        <h2>Looking for a backend engineer?</h2>
+        <p class="contact-sub">
+          I'm open to senior backend roles in Gurugram, Bangalore, Hyderabad, Pune or Chennai.
+          Email is the best way to reach me.
+        </p>
+        <a class="contact-email" href="mailto:ashutoshverma2799@gmail.com">ashutoshverma2799@gmail.com</a>
+        <ul class="contact-links">
+          <li><a href="https://linkedin.com/in/ashutosh-verma27" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/ashutoshverma27" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="tel:+918299446752">+91 82994 46752</a></li>
+          <li><a href="assets/Ashutosh_Verma_Resume.pdf" download>Download résumé ↓</a></li>
         </ul>
       </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2 class="section-title">Contact</h2>
-      <div class="section-body">
-        <p>I'm open to senior backend engineering roles. The best way to reach me is by email.</p>
-        <dl class="contact">
-          <div><dt>Email</dt><dd><a href="mailto:ashutoshverma2799@gmail.com">ashutoshverma2799@gmail.com</a></dd></div>
-          <div><dt>Phone</dt><dd><a href="tel:+918299446752">+91 82994 46752</a></dd></div>
-          <div><dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/ashutosh-verma27" target="_blank" rel="noopener">linkedin.com/in/ashutosh-verma27</a></dd></div>
-          <div><dt>GitHub</dt><dd><a href="https://github.com/ashutoshverma27" target="_blank" rel="noopener">github.com/ashutoshverma27</a></dd></div>
-        </dl>
-      </div>
+      <footer class="wrap footer">
+        <p>© <span id="year">2026</span> Ashutosh Verma</p>
+        <p>Noida, India</p>
+      </footer>
     </section>
   </main>
-
-  <footer class="container footer">
-    <p>© <span id="year">2026</span> Ashutosh Verma</p>
-    <a href="assets/Ashutosh_Verma_Resume.pdf" download>Download résumé (PDF)</a>
-  </footer>
 
   <script src="script.js" defer></script>
 </body>
