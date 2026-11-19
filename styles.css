@@ -296,9 +296,9 @@ body::before {
 .company { transition: color .25s; }
 .job-sub { font-size: .85rem; color: var(--dim); margin-top: .2rem; }
 
+.badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
 .badge-award {
   display: inline-flex; align-items: center; gap: .4rem;
-  margin-top: .8rem;
   font-family: var(--mono); font-size: .7rem;
   color: var(--accent);
   padding: .25rem .6rem;
