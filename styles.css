@@ -309,3 +309,9 @@ h1 {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+#work { 
+  padding-top: 16px;
+  
+  .section-head { margin-bottom: 24px; }
+}
