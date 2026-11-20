@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>document.documentElement.classList.add("js")</script>
   <title>Ashutosh Verma | Senior Software Engineer</title>
   <meta name="description" content="Ashutosh Verma is a backend-focused Senior Software Engineer building Java, Spring Boot and Kafka-based systems for Realtor.com and UpNest." />
   <meta name="theme-color" content="#f6f4ef" />
@@ -31,10 +32,19 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
+  <!-- Shared SVG definitions for the diagrams -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8f897c"/></marker>
+      <marker id="ah-on" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2410c"/></marker>
+      <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#d9d4c8" stroke-width="2"/></pattern>
+    </defs>
+  </svg>
+
   <!-- ===== Header ===== -->
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <a href="#" class="brand" aria-label="Ashutosh Verma, home">
+      <a href="#" class="brand" aria-label="Ashutosh Verma, back to top">
         <span class="brand-mark">AV</span>
         <span class="brand-name">Ashutosh Verma</span>
       </a>
@@ -46,8 +56,13 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a class="btn btn-small btn-dark" href="assets/Ashutosh_Verma_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="cmdk-trigger" type="button" data-cmdk-open aria-haspopup="dialog">
+        <span class="only-desktop">Jump to</span><span class="only-mobile">Menu</span>
+        <kbd class="only-desktop" data-mod>⌘K</kbd>
+      </button>
+      <a class="btn btn-small btn-dark only-desktop" href="assets/Ashutosh_Verma_Resume.pdf" target="_blank" rel="noopener">Resume</a>
     </div>
+    <div class="progress" aria-hidden="true"><span></span></div>
   </header>
 
   <main id="main">
@@ -55,306 +70,369 @@
     <!-- ===== Hero ===== -->
     <section class="hero wrap">
       <div class="hero-main">
-        <p class="kicker"><span class="kicker-dot" aria-hidden="true"></span>Senior Software Engineer at Tavant Technologies</p>
-        <h1>I build the backend systems behind real estate platforms used by <span class="hl">thousands of agents</span> every day.</h1>
-        <p class="hero-sub">
+        <p class="kicker rise" style="--d:0"><span class="kicker-dot" aria-hidden="true"></span>Senior Software Engineer at Tavant Technologies</p>
+        <h1 class="rise" style="--d:1">I build the backend systems behind real estate platforms used by <span class="hl">thousands of agents</span> every day.</h1>
+        <p class="hero-sub rise" style="--d:2">
           5.2 years of designing REST APIs and event-driven microservices in Java, Spring Boot and
           Apache Kafka for Realtor.com and UpNest.
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-accent" href="#work">See projects</a>
-          <a class="btn btn-line" href="mailto:ashutoshverma2799@gmail.com">ashutoshverma2799@gmail.com</a>
+        <div class="hero-actions rise" style="--d:3">
+          <a class="btn btn-accent" href="#work">See projects <span class="arrow" aria-hidden="true">→</span></a>
+          <button class="btn btn-line copy-email" type="button" data-copy="ashutoshverma2799@gmail.com">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="6.5" y="6.5" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M13.5 6.5V5a1.5 1.5 0 0 0-1.5-1.5H5A1.5 1.5 0 0 0 3.5 5v7A1.5 1.5 0 0 0 5 13.5h1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            ashutoshverma2799@gmail.com
+          </button>
         </div>
       </div>
 
-      <aside class="hero-card" aria-label="Quick facts">
+      <aside class="hero-card rise" style="--d:2" aria-label="Quick facts">
         <dl>
-          <div><dt>Based in</dt><dd>Noida, India</dd></div>
+          <div><dt>Based in</dt><dd>Noida, India <span class="clock" id="clock"></span></dd></div>
           <div><dt>Focus</dt><dd>Backend &amp; distributed systems</dd></div>
           <div><dt>Core stack</dt><dd>Java · Spring Boot · Kafka · AWS</dd></div>
           <div><dt>Open to</dt><dd>Noida, Gurugram, Bangalore, Hyderabad, Pune, Chennai</dd></div>
         </dl>
         <div class="hero-card-links">
-          <a href="https://linkedin.com/in/ashutosh-verma27" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="https://github.com/ashutoshverma27" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://linkedin.com/in/ashutosh-verma27" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/ashutoshverma27" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </aside>
     </section>
 
-    <!-- ===== Clients strip ===== -->
-    <!-- <section class="clients wrap" aria-label="Companies and products">
-      <p class="clients-label">Companies &amp; products</p>
-      <ul class="clients-list">
-        <li>Realtor.com</li>
-        <li>UpNest</li>
-        <li>Tavant</li>
-        <li>TCS</li>
-      </ul>
-    </section> -->
-
-    <!-- ===== Numbers ===== -->
-    <!-- <section class="numbers wrap" aria-label="Impact in numbers">
-      <div class="num"><strong>7,300+</strong><span>active agents on the platform I helped build</span></div>
-      <div class="num"><strong>50K+</strong><span>proposals generated each month</span></div>
-      <div class="num"><strong>100K+</strong><span>API requests served every day</span></div>
-      <div class="num"><strong>60%</strong><span>smaller API payloads after modernization</span></div>
-    </section> -->
-
-    <!-- ===== Selected work ===== -->
+    <!-- ===== Projects ===== -->
     <section id="work" class="section wrap">
-      <header class="section-head">
+      <header class="section-head reveal">
         <p class="section-no">01</p>
         <h2>Projects</h2>
-        <p class="section-intro">Three backend systems I've helped build and evolve, each tackling a different engineering challenge.</p>
+        <p class="section-intro">Three backend systems I've helped build and evolve, each tackling a different engineering challenge. Hover or tap the diagrams to explore them.</p>
       </header>
 
-      <!-- Case 1 -->
-      <article class="case">
-        <div class="case-text">
-          <p class="case-meta">Realtor.com · Tavant</p>
-          <h3>RCS Engine</h3>
-          <p class="case-summary">
-            A multi-service platform (Proposals, Users, Authentication and API Gateway) that
-            supports 7,300+ active agents and 50,000+ proposals a month.
-          </p>
-          <ul class="case-points">
-            <li><strong>Migration without downtime.</strong> A dual-store layer reads legacy agent templates from MySQL and copies them into DynamoDB the first time they're used. No manual migration of 7,300+ agent records was needed.</li>
-            <li><strong>Scores that stay current.</strong> Kafka events recalculate proposal readiness when a template changes, replacing a batch job that left scores out of date.</li>
-          </ul>
-          <ul class="tags"><li>Kafka</li><li>DynamoDB</li><li>MySQL</li><li>Microservices</li></ul>
+      <div class="work">
+        <div class="work-list">
+
+          <!-- Project 1 -->
+          <article class="case" id="rcs" data-title="RCS Engine">
+            <div class="case-text">
+              <p class="case-meta"><span class="case-no">01</span> Realtor.com · Tavant</p>
+              <h3>RCS Engine</h3>
+              <p class="case-summary">
+                A multi-service platform (Proposals, Users, Authentication and API Gateway) that
+                supports 7,300+ active agents and 50,000+ proposals a month.
+              </p>
+              <ul class="case-points">
+                <li><strong>Migration without downtime.</strong> A dual-store layer reads legacy agent templates from MySQL and copies them into DynamoDB the first time they're used. No manual migration of 7,300+ agent records was needed.</li>
+                <li><strong>Scores that stay current.</strong> Kafka events recalculate proposal readiness when a template changes, replacing a batch job that left scores out of date.</li>
+              </ul>
+              <ul class="case-stats">
+                <li><strong>7,300+</strong> active agents</li>
+                <li><strong>50K+</strong> proposals / month</li>
+              </ul>
+            </div>
+            <div class="fig-slot">
+              <figure class="fig" data-default="An API Gateway in front of the Proposals, Users and Authentication services, with Kafka and DynamoDB behind them.">
+                <svg class="dg" viewBox="0 0 480 270" role="img" aria-label="RCS Engine architecture diagram">
+                  <path class="ln" data-n="gw prop" d="M136 135 H160 V56 H182"/>
+                  <path class="ln" data-n="gw users" d="M136 135 H182"/>
+                  <path class="ln" data-n="gw auth" d="M136 135 H160 V214 H182"/>
+                  <path class="ln" data-n="prop kafka" d="M296 56 H342"/>
+                  <path class="ln" data-n="users ddb" d="M296 135 H342"/>
+                  <path class="ln" data-n="kafka ddb" d="M400 78 V111"/>
+                  <path class="ln dash" data-n="mysql ddb" d="M400 192 V159"/>
+                  <text class="cap" x="408" y="100">readiness</text>
+                  <text class="cap" x="408" y="180">on first read</text>
+
+                  <g class="nd" tabindex="0" data-id="gw" data-name="API Gateway" data-note="The single entry point. It routes every request to the Proposals, Users and Authentication services.">
+                    <rect x="24" y="113" width="112" height="44" rx="8"/><text x="80" y="140">API Gateway</text></g>
+                  <g class="nd" tabindex="0" data-id="prop" data-name="Proposals service" data-note="Generates and manages agent proposals: more than 50,000 a month.">
+                    <rect x="184" y="34" width="112" height="44" rx="8"/><text x="240" y="61">Proposals</text></g>
+                  <g class="nd" tabindex="0" data-id="users" data-name="Users service" data-note="Manages the 7,300+ active agents and their proposal templates.">
+                    <rect x="184" y="113" width="112" height="44" rx="8"/><text x="240" y="140">Users</text></g>
+                  <g class="nd" tabindex="0" data-id="auth" data-name="Authentication service" data-note="Handles authentication for the platform, alongside the other core services.">
+                    <rect x="184" y="192" width="112" height="44" rx="8"/><text x="240" y="219">Auth</text></g>
+                  <g class="nd acc" tabindex="0" data-id="kafka" data-name="Apache Kafka" data-note="Template updates publish events that recalculate proposal readiness in near real time. This replaced a batch refresh that left scores out of date.">
+                    <rect x="344" y="34" width="112" height="44" rx="8"/><text x="400" y="61">Kafka</text></g>
+                  <g class="nd" tabindex="0" data-id="ddb" data-name="DynamoDB" data-note="The current store for agent templates and readiness data.">
+                    <rect x="344" y="113" width="112" height="44" rx="8"/><text x="400" y="140">DynamoDB</text></g>
+                  <g class="nd ghost" tabindex="0" data-id="mysql" data-name="Legacy MySQL" data-note="Legacy templates are read from MySQL and provisioned into DynamoDB on first access, so 7,300+ agent records never needed a manual migration.">
+                    <rect x="344" y="192" width="112" height="44" rx="8"/><text x="400" y="219">MySQL (legacy)</text></g>
+                </svg>
+                <div class="fig-note" aria-live="polite">
+                  <div class="fig-note-head">
+                    <p class="fig-note-title">System overview</p>
+                    <p class="fig-hint">Hover a box to explore</p>
+                  </div>
+                  <p class="fig-note-body"></p>
+                </div>
+              </figure>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="case" id="ucs" data-title="Unified Communication Service">
+            <div class="case-text">
+              <p class="case-meta"><span class="case-no">02</span> Realtor.com · Tavant</p>
+              <h3>Unified Communication Service</h3>
+              <p class="case-summary">
+                A Java 17 / Spring Boot platform with REST APIs, serving more than 100,000 requests a day
+                with transaction management on MySQL.
+              </p>
+              <ul class="case-points">
+                <li><strong>Built for failure.</strong> Asynchronous processing on Kafka with Dead Letter Queues, so transactions aren't lost when downstream services are down.</li>
+                <li><strong>40% faster reports.</strong> Reworked MySQL schemas and query plans with composite indexes.</li>
+                <li><strong>Secure by default.</strong> Spring Security with JWT validation, DynamoDB audit logs and AWS Secrets Manager for configuration.</li>
+              </ul>
+              <ul class="case-stats">
+                <li><strong>100K+</strong> requests / day</li>
+                <li><strong>40%</strong> faster reports</li>
+              </ul>
+            </div>
+            <div class="fig-slot">
+              <figure class="fig" data-default="A Spring Boot API that persists to MySQL and hands work to Kafka, with a dead letter queue as a safety net.">
+                <svg class="dg" viewBox="0 0 480 270" role="img" aria-label="Unified Communication Service architecture diagram">
+                  <path class="ln" data-n="clients api" d="M124 135 H170"/>
+                  <path class="ln" data-n="api mysql" d="M240 103 V56 H354"/>
+                  <path class="ln" data-n="api kafka" d="M310 135 H354"/>
+                  <path class="ln" data-n="kafka down" d="M406 157 V190"/>
+                  <path class="ln dash" data-n="down dlq" d="M356 214 H300"/>
+                  <text class="cap c" x="328" y="252">on failure</text>
+
+                  <g class="nd" tabindex="0" data-id="clients" data-name="Client apps" data-note="Clients get aggregated, client-tailored responses from one service, which reduces UI network overhead.">
+                    <rect x="24" y="113" width="100" height="44" rx="8"/><text x="74" y="140">Clients</text></g>
+                  <g class="nd strong" tabindex="0" data-id="api" data-name="Spring Boot API" data-note="Java 17, Spring Boot and Hibernate ORM. REST APIs serve 100,000+ requests a day, secured with Spring Security and JWT validation.">
+                    <rect x="172" y="103" width="138" height="64" rx="10"/><text x="241" y="131">Spring Boot API</text><text class="sub" x="241" y="150">JWT · Spring Security</text></g>
+                  <g class="nd" tabindex="0" data-id="mysql" data-name="MySQL" data-note="Transactional storage. Composite indexes and tuned query plans made dashboard reports 40% faster.">
+                    <rect x="356" y="34" width="100" height="44" rx="8"/><text x="406" y="61">MySQL</text></g>
+                  <g class="nd acc" tabindex="0" data-id="kafka" data-name="Apache Kafka" data-note="Asynchronous processing decouples the API from downstream services, so slow or failing services don't block requests.">
+                    <rect x="356" y="113" width="100" height="44" rx="8"/><text x="406" y="140">Kafka</text></g>
+                  <g class="nd" tabindex="0" data-id="down" data-name="Downstream services" data-note="The microservices this platform integrates with and aggregates data from.">
+                    <rect x="356" y="192" width="100" height="44" rx="8"/><text x="406" y="219">Downstream</text></g>
+                  <g class="nd ghost" tabindex="0" data-id="dlq" data-name="Dead Letter Queue" data-note="Failed messages are kept for reprocessing, which keeps transactional loss to a minimum when downstream services are down.">
+                    <rect x="198" y="192" width="100" height="44" rx="8"/><text x="248" y="219">DLQ</text></g>
+                </svg>
+                <div class="fig-note" aria-live="polite">
+                  <div class="fig-note-head">
+                    <p class="fig-note-title">System overview</p>
+                    <p class="fig-hint">Hover a box to explore</p>
+                  </div>
+                  <p class="fig-note-body"></p>
+                </div>
+              </figure>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="case" id="upnest" data-title="UpNest Platform Modernization">
+            <div class="case-text">
+              <p class="case-meta"><span class="case-no">03</span> UpNest.com · Tavant</p>
+              <h3>UpNest Platform Modernization</h3>
+              <p class="case-summary">
+                Breaking a legacy Struts2 / Spring MVC monolith into modular Spring services while the
+                product kept shipping.
+              </p>
+              <ul class="case-points">
+                <li><strong>ML agent matching.</strong> An ONNX model inside a Java service scores and ranks agents for incoming leads. It was released through an A/B test to 25% of production traffic.</li>
+                <li><strong>Strangler Fig migration.</strong> New REST services cut response payloads by 60%, and dual writes kept the legacy and MariaDB databases in sync during rollout.</li>
+                <li><strong>Enterprise SSO.</strong> Okta SSO / SAML for advisors and admins, with identity aliasing between Okta and internal accounts.</li>
+              </ul>
+              <ul class="case-stats">
+                <li><strong>60%</strong> smaller payloads</li>
+                <li><strong>25%</strong> of traffic in A/B test</li>
+              </ul>
+            </div>
+            <div class="fig-slot">
+              <figure class="fig" data-default="A legacy monolith split into focused Spring services, one piece at a time.">
+                <svg class="dg" viewBox="0 0 480 270" role="img" aria-label="UpNest modernization diagram">
+                  <path class="ln" data-n="mono match" d="M174 48 H288"/>
+                  <path class="ln" data-n="mono sso" d="M174 96 H288"/>
+                  <path class="ln" data-n="mono rest" d="M174 144 H288"/>
+                  <text class="cap c" x="231" y="16">Strangler Fig</text>
+
+                  <g class="nd" tabindex="0" data-id="mono" data-name="Legacy monolith" data-note="A Struts2 / Spring MVC monolith, broken down gradually with the Strangler Fig pattern. Dual writes kept it in sync with the new MariaDB databases.">
+                    <rect x="24" y="22" width="150" height="148" rx="10"/>
+                    <rect x="24" y="22" width="150" height="148" rx="10" fill="url(#hatch)" class="hatch-fill"/>
+                    <rect class="label-bg" x="40" y="78" width="118" height="36" rx="6"/>
+                    <text x="99" y="94">Struts2 /</text><text x="99" y="109">Spring MVC</text></g>
+                  <g class="nd" tabindex="0" data-id="match" data-name="Agent matching (ONNX)" data-note="An ONNX machine-learning model in a Java service scores and ranks agents for incoming leads. It was rolled out through a controlled A/B test to 25% of production traffic.">
+                    <rect x="290" y="26" width="166" height="44" rx="8"/><text x="373" y="53">Matching · ONNX</text></g>
+                  <g class="nd" tabindex="0" data-id="sso" data-name="Okta SSO / SAML" data-note="SSO for advisors and admins, with identity aliasing that maps Okta accounts to internal ones.">
+                    <rect x="290" y="74" width="166" height="44" rx="8"/><text x="373" y="101">Auth · Okta SAML</text></g>
+                  <g class="nd" tabindex="0" data-id="rest" data-rel="pay" data-name="REST services" data-note="Modular Spring services with REST APIs. Response payloads dropped 60%, from 2.5 MB to 1 MB.">
+                    <rect x="290" y="122" width="166" height="44" rx="8"/><text x="373" y="149">REST services</text></g>
+
+                  <g class="nd bars" tabindex="0" data-id="pay" data-rel="rest" data-name="API payload size" data-note="Response payloads went from 2.5 MB to 1 MB after the new REST services replaced monolith endpoints.">
+                    <rect class="hit" x="16" y="196" width="448" height="66" rx="8"/>
+                    <text class="cap" x="24" y="220" text-anchor="start">Payload before</text>
+                    <rect class="track" x="130" y="211" width="270" height="12" rx="6"/>
+                    <rect class="bar-old" x="130" y="211" width="270" height="12" rx="6"/>
+                    <text class="val" x="456" y="221">2.5 MB</text>
+                    <text class="cap" x="24" y="252" text-anchor="start">Payload after</text>
+                    <rect class="track" x="130" y="243" width="270" height="12" rx="6"/>
+                    <rect class="bar-new" x="130" y="243" width="108" height="12" rx="6"/>
+                    <text class="val" x="456" y="253">1.0 MB</text></g>
+                </svg>
+                <div class="fig-note" aria-live="polite">
+                  <div class="fig-note-head">
+                    <p class="fig-note-title">System overview</p>
+                    <p class="fig-hint">Hover a box to explore</p>
+                  </div>
+                  <p class="fig-note-body"></p>
+                </div>
+              </figure>
+            </div>
+          </article>
         </div>
-        <figure class="case-figure">
-          <svg class="dg" viewBox="0 0 480 290" role="img" aria-label="Architecture: API Gateway routes to Proposals, Users and Auth services. Proposals publish to Kafka, which updates DynamoDB. Legacy MySQL data migrates to DynamoDB on first read.">
-            <defs>
-              <marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ah"/></marker>
-            </defs>
-            <path class="ln" d="M136 145 H160 V66 H182" marker-end="url(#ah1)"/>
-            <path class="ln" d="M136 145 H182" marker-end="url(#ah1)"/>
-            <path class="ln" d="M136 145 H160 V224 H182" marker-end="url(#ah1)"/>
-            <path class="ln" d="M296 66 H342" marker-end="url(#ah1)"/>
-            <path class="ln" d="M296 145 H342" marker-end="url(#ah1)"/>
-            <path class="ln" d="M400 88 V121" marker-end="url(#ah1)"/>
-            <path class="ln dash" d="M400 202 V169" marker-end="url(#ah1)"/>
 
-            <rect class="bx" x="24" y="123" width="112" height="44" rx="8"/>
-            <text class="tx" x="80" y="150">API Gateway</text>
-            <rect class="bx" x="184" y="44" width="112" height="44" rx="8"/>
-            <text class="tx" x="240" y="71">Proposals</text>
-            <rect class="bx" x="184" y="123" width="112" height="44" rx="8"/>
-            <text class="tx" x="240" y="150">Users</text>
-            <rect class="bx" x="184" y="202" width="112" height="44" rx="8"/>
-            <text class="tx" x="240" y="229">Auth</text>
-            <rect class="bx acc" x="344" y="44" width="112" height="44" rx="8"/>
-            <text class="tx inv" x="400" y="71">Kafka</text>
-            <rect class="bx" x="344" y="123" width="112" height="44" rx="8"/>
-            <text class="tx" x="400" y="150">DynamoDB</text>
-            <rect class="bx dash" x="344" y="202" width="112" height="44" rx="8"/>
-            <text class="tx muted" x="400" y="229">MySQL (legacy)</text>
-            <text class="cap" x="408" y="110" text-anchor="start">readiness</text>
-            <text class="cap" x="408" y="190" text-anchor="start">on first read</text>
-          </svg>
-          <!-- <figcaption>Gateway, services and the event flow that keeps readiness scores current.</figcaption> -->
-        </figure>
-      </article>
-
-      <!-- Case 2 -->
-      <article class="case reverse">
-        <div class="case-text">
-          <p class="case-meta">Realtor.com · Tavant</p>
-          <h3>Unified Communication Service</h3>
-          <p class="case-summary">
-            A Java 17 / Spring Boot platform with REST APIs, serving more than 100,000 requests a day
-            with transaction management on MySQL.
-          </p>
-          <ul class="case-points">
-            <li><strong>Built for failure.</strong> Asynchronous processing on Kafka with Dead Letter Queues, so transactions aren't lost when downstream services are down.</li>
-            <li><strong>40% faster reports.</strong> Reworked MySQL schemas and query plans with composite indexes.</li>
-            <li><strong>Secure by default.</strong> Spring Security with JWT validation, DynamoDB audit logs and AWS Secrets Manager for configuration.</li>
-          </ul>
-          <ul class="tags"><li>Java 17</li><li>Spring Boot</li><li>Hibernate</li><li>Kafka</li><li>JWT</li></ul>
+        <!-- Sticky stage (desktop): diagrams move here and swap as you scroll -->
+        <div class="work-stage" aria-hidden="false">
+          <div class="stage-head">
+            <p class="stage-count"><span data-stage-no>01</span> / 03</p>
+            <div class="stage-dots" role="tablist" aria-label="Projects">
+              <button type="button" role="tab" data-go="rcs" aria-label="RCS Engine"></button>
+              <button type="button" role="tab" data-go="ucs" aria-label="Unified Communication Service"></button>
+              <button type="button" role="tab" data-go="upnest" aria-label="UpNest Platform Modernization"></button>
+            </div>
+          </div>
+          <div class="stage-figs"></div>
         </div>
-        <figure class="case-figure">
-          <svg class="dg" viewBox="0 0 480 290" role="img" aria-label="Architecture: clients call a Spring Boot API secured with JWT. The API writes to MySQL and publishes to Kafka, which delivers to downstream services. Failed messages go to a dead letter queue.">
-            <defs>
-              <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ah"/></marker>
-            </defs>
-            <path class="ln" d="M124 145 H170" marker-end="url(#ah2)"/>
-            <path class="ln" d="M240 113 V66 H354" marker-end="url(#ah2)"/>
-            <path class="ln" d="M310 145 H354" marker-end="url(#ah2)"/>
-            <path class="ln" d="M406 167 V200" marker-end="url(#ah2)"/>
-            <path class="ln dash" d="M356 224 H300" marker-end="url(#ah2)"/>
-
-            <rect class="bx" x="24" y="123" width="100" height="44" rx="8"/>
-            <text class="tx" x="74" y="150">Clients</text>
-            <rect class="bx strong" x="172" y="113" width="138" height="64" rx="10"/>
-            <text class="tx" x="241" y="141">Spring Boot API</text>
-            <text class="cap c" x="241" y="160">JWT · Spring Security</text>
-            <rect class="bx" x="356" y="44" width="100" height="44" rx="8"/>
-            <text class="tx" x="406" y="71">MySQL</text>
-            <rect class="bx acc" x="356" y="123" width="100" height="44" rx="8"/>
-            <text class="tx inv" x="406" y="150">Kafka</text>
-            <rect class="bx" x="356" y="202" width="100" height="44" rx="8"/>
-            <text class="tx" x="406" y="229">Downstream</text>
-            <rect class="bx dash" x="198" y="202" width="100" height="44" rx="8"/>
-            <text class="tx muted" x="248" y="229">DLQ</text>
-            <text class="cap c" x="328" y="262">on failure</text>
-          </svg>
-          <!-- <figcaption>Requests, persistence, and a dead letter queue as a safety net.</figcaption> -->
-        </figure>
-      </article>
-
-      <!-- Case 3 -->
-      <article class="case">
-        <div class="case-text">
-          <p class="case-meta">UpNest.com · Tavant</p>
-          <h3>UpNest Platform Modernization</h3>
-          <p class="case-summary">
-            Breaking a legacy Struts2 / Spring MVC monolith into modular Spring services while the
-            product kept shipping.
-          </p>
-          <ul class="case-points">
-            <li><strong>ML agent matching.</strong> An ONNX model inside a Java service scores and ranks agents for incoming leads. It was released through an A/B test to 25% of production traffic.</li>
-            <li><strong>Strangler Fig migration.</strong> New REST services cut response payloads by 60%, and dual writes kept the legacy and MariaDB databases in sync during rollout.</li>
-            <li><strong>Enterprise SSO.</strong> Okta SSO / SAML for advisors and admins, with identity aliasing between Okta and internal accounts.</li>
-          </ul>
-          <ul class="tags"><li>Java</li><li>Spring</li><li>ONNX</li><li>Okta / SAML</li><li>MariaDB</li></ul>
-        </div>
-        <figure class="case-figure">
-          <svg class="dg" viewBox="0 0 480 290" role="img" aria-label="Diagram: a legacy monolith is split into three Spring services for matching, authentication and REST APIs. API payload size drops from 2.5 MB to 1.0 MB.">
-            <defs>
-              <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ah"/></marker>
-              <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" class="hatch"/></pattern>
-            </defs>
-            <rect class="bx" x="24" y="32" width="150" height="148" rx="10"/>
-            <rect x="24" y="32" width="150" height="148" rx="10" fill="url(#hatch)"/>
-            <rect class="label-bg" x="40" y="88" width="118" height="36" rx="6"/>
-            <text class="tx" x="99" y="104">Struts2 /</text>
-            <text class="tx" x="99" y="119">Spring MVC</text>
-
-            <path class="ln" d="M174 58 H288" marker-end="url(#ah3)"/>
-            <path class="ln" d="M174 106 H288" marker-end="url(#ah3)"/>
-            <path class="ln" d="M174 154 H288" marker-end="url(#ah3)"/>
-            <text class="cap c" x="231" y="24">Strangler Fig</text>
-
-            <rect class="bx" x="290" y="36" width="166" height="44" rx="8"/>
-            <text class="tx" x="373" y="63">Matching · ONNX</text>
-            <rect class="bx" x="290" y="84" width="166" height="44" rx="8"/>
-            <text class="tx" x="373" y="111">Auth · Okta SAML</text>
-            <rect class="bx" x="290" y="132" width="166" height="44" rx="8"/>
-            <text class="tx" x="373" y="159">REST services</text>
-
-            <text class="cap" x="24" y="230" text-anchor="start">Payload before</text>
-            <rect class="track" x="130" y="221" width="270" height="12" rx="6"/>
-            <rect class="bar-old" x="130" y="221" width="270" height="12" rx="6"/>
-            <text class="tx sm" x="456" y="231" text-anchor="end">2.5 MB</text>
-            <text class="cap" x="24" y="262" text-anchor="start">Payload after</text>
-            <rect class="track" x="130" y="253" width="270" height="12" rx="6"/>
-            <rect class="bar-new" x="130" y="253" width="108" height="12" rx="6"/>
-            <text class="tx sm" x="456" y="263" text-anchor="end">1.0 MB</text>
-          </svg>
-          <!-- <figcaption>Splitting the monolith one service at a time.</figcaption> -->
-        </figure>
-      </article>
+      </div>
     </section>
 
     <!-- ===== Experience ===== -->
     <section id="experience" class="section wrap">
-      <header class="section-head">
+      <header class="section-head reveal">
         <p class="section-no">02</p>
         <h2>Experience</h2>
       </header>
 
-      <ol class="jobs">
-        <li class="job">
-          <p class="job-dates">Apr 2022 – Present</p>
-          <div class="job-main">
+      <div class="timeline">
+        <span class="tl-fill" aria-hidden="true"></span>
+        <ol>
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <p class="tl-dates">Apr 2022 – Present</p>
+          <div class="tl-main">
             <h3>Senior Software Engineer</h3>
-            <p class="job-org">Tavant Technologies · Noida, India</p>
-            <p class="job-desc">
+            <p class="tl-org">Tavant Technologies · Noida, India</p>
+            <p class="tl-desc">
               Backend engineer on Realtor.com and UpNest products: RCS Engine, Unified Communication
               Service, and UpNest platform modernization. Twice recognized with the Tavant Excellence
               Award (2023, 2025).
             </p>
+            <ul class="tl-links">
+              <li><a href="#rcs">RCS Engine</a></li>
+              <li><a href="#ucs">Unified Communication Service</a></li>
+              <li><a href="#upnest">UpNest Modernization</a></li>
+            </ul>
           </div>
         </li>
-        <li class="job">
-          <p class="job-dates">Aug 2021 – Apr 2022</p>
-          <div class="job-main">
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <p class="tl-dates">Aug 2021 – Apr 2022</p>
+          <div class="tl-main">
             <h3>Assistant Systems Engineer Trainee</h3>
-            <p class="job-org">Tata Consultancy Services · Gurgaon, India</p>
-            <p class="job-desc">
+            <p class="tl-org">Tata Consultancy Services · Gurgaon, India</p>
+            <p class="tl-desc">
               Built responsive ReactJS features that made page loads 25% faster, working with Java backend
               teams on contract-first REST APIs. Kept the module's Jest test coverage above 80%.
             </p>
           </div>
         </li>
-      </ol>
+        <li class="tl-item reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <p class="tl-dates">2017 – 2021</p>
+          <div class="tl-main">
+            <h3>B.Tech, Computer Science and Engineering</h3>
+            <p class="tl-org">Noida Institute of Engineering and Technology</p>
+            <p class="tl-desc">First Class with Honours (Division I).</p>
+          </div>
+        </li>
+        </ol>
+      </div>
     </section>
 
     <!-- ===== Tech stack ===== -->
     <section id="stack" class="section wrap">
-      <header class="section-head">
+      <header class="section-head reveal">
         <p class="section-no">03</p>
         <h2>Tech Stack</h2>
-        <p class="section-intro">What I work with day to day, grouped by the problems it solves.</p>
+        <p class="section-intro">What I work with day to day. Pick a project to see which tools it used.</p>
       </header>
 
+      <div class="filter reveal" role="group" aria-label="Filter tools by project">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="rcs" aria-pressed="false">RCS Engine</button>
+        <button type="button" data-f="ucs" aria-pressed="false">Unified Communication</button>
+        <button type="button" data-f="up" aria-pressed="false">UpNest</button>
+        <p class="filter-count" aria-live="polite"></p>
+      </div>
+
       <div class="caps">
-        <div class="cap-card">
+        <div class="cap-card reveal">
           <h3>Backend &amp; APIs</h3>
           <p>REST APIs and services with clear contracts, transactions and tests.</p>
-          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Spring MVC</li><li>Spring Data JPA</li><li>Hibernate</li><li>Maven</li></ul>
+          <ul class="tags">
+            <li data-p="ucs up">Java</li><li data-p="ucs">Spring Boot</li><li data-p="up">Spring MVC</li>
+            <li>Spring Data JPA</li><li data-p="ucs">Hibernate</li><li data-p="up">ONNX</li><li>Maven</li>
+          </ul>
         </div>
-        <div class="cap-card">
+        <div class="cap-card reveal">
           <h3>Event-driven systems</h3>
           <p>Asynchronous workflows that keep data in sync and recover from failure.</p>
-          <ul class="tags"><li>Apache Kafka</li><li>Dead Letter Queues</li><li>Microservices</li><li>Multithreading</li></ul>
+          <ul class="tags">
+            <li data-p="rcs ucs">Apache Kafka</li><li data-p="ucs">Dead Letter Queues</li>
+            <li data-p="rcs ucs up">Microservices</li><li>Multithreading</li>
+          </ul>
         </div>
-        <div class="cap-card">
+        <div class="cap-card reveal">
           <h3>Data</h3>
           <p>Schema design, query tuning, and migrations between data stores.</p>
-          <ul class="tags"><li>MySQL</li><li>MariaDB</li><li>DynamoDB</li><li>Redis</li><li>SQL</li></ul>
+          <ul class="tags">
+            <li data-p="rcs ucs">MySQL</li><li data-p="up">MariaDB</li><li data-p="rcs ucs">DynamoDB</li>
+            <li>Redis</li><li data-p="ucs">SQL</li>
+          </ul>
         </div>
-        <div class="cap-card">
+        <div class="cap-card reveal">
           <h3>Security &amp; identity</h3>
           <p>Authentication, authorization and secrets management for multi-tenant systems.</p>
-          <ul class="tags"><li>Spring Security</li><li>JWT</li><li>Okta SSO / SAML</li><li>AWS Secrets Manager</li></ul>
+          <ul class="tags">
+            <li data-p="ucs">Spring Security</li><li data-p="ucs">JWT</li><li data-p="up">Okta SSO / SAML</li>
+            <li data-p="ucs">AWS Secrets Manager</li>
+          </ul>
         </div>
-        <div class="cap-card">
+        <div class="cap-card reveal">
           <h3>Cloud &amp; delivery</h3>
           <p>Shipping safely through CI/CD with quality gates.</p>
-          <ul class="tags"><li>AWS (S3, DynamoDB)</li><li>Docker</li><li>Git</li><li>CircleCI</li><li>SonarCloud</li></ul>
+          <ul class="tags">
+            <li data-p="rcs ucs up">AWS</li><li>Docker</li><li>Git</li><li data-p="up">CircleCI</li><li data-p="up">SonarCloud</li>
+          </ul>
         </div>
-        <div class="cap-card">
+        <div class="cap-card reveal">
           <h3>Testing &amp; tooling</h3>
           <p>Unit tests, plus AI coding tools to speed up everyday work.</p>
-          <ul class="tags"><li>JUnit</li><li>Mockito</li><li>Jest</li><li>ReactJS</li><li>Claude Code</li><li>GitHub Copilot</li></ul>
+          <ul class="tags">
+            <li>JUnit</li><li>Mockito</li><li>Jest</li><li>ReactJS</li><li>Claude Code</li><li>GitHub Copilot</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- ===== Recognition ===== -->
     <section class="section wrap">
-      <header class="section-head">
+      <header class="section-head reveal">
         <p class="section-no">04</p>
-        <h2>Recognition &amp; education</h2>
+        <h2>Recognition</h2>
       </header>
 
       <div class="awards">
-        <div class="award">
-          <p class="award-year">2025</p>
+        <div class="award reveal">
+          <p class="award-year">Dec 2025</p>
           <h3>Tavant Excellence Award</h3>
           <p>For agility and quick technical adaptation across shifting project requirements.</p>
         </div>
-        <div class="award">
-          <p class="award-year">2023</p>
+        <div class="award reveal">
+          <p class="award-year">Oct 2023</p>
           <h3>Tavant Excellence Award</h3>
           <p>For core contributions to the modernization of the UpNest.com platform.</p>
-        </div>
-        <div class="award">
-          <p class="award-year">2021</p>
-          <h3>B.Tech, Computer Science</h3>
-          <p>Noida Institute of Engineering and Technology. First Class with Honours.</p>
         </div>
       </div>
     </section>
@@ -363,13 +441,16 @@
     <section id="contact" class="contact">
       <div class="wrap contact-inner">
         <p class="section-no light">05</p>
-        <h2>Looking for a backend engineer?</h2>
-        <p class="contact-sub">
+        <h2 class="reveal">Looking for a backend engineer?</h2>
+        <p class="contact-sub reveal">
           I'm open to senior backend roles in Noida, Gurugram, Bangalore, Hyderabad, Pune or Chennai.
           Email is the best way to reach me.
         </p>
-        <a class="contact-email" href="mailto:ashutoshverma2799@gmail.com">ashutoshverma2799@gmail.com</a>
-        <ul class="contact-links">
+        <div class="contact-email-row reveal">
+          <a class="contact-email" href="mailto:ashutoshverma2799@gmail.com">ashutoshverma2799@gmail.com</a>
+          <button class="copy-chip copy-email" type="button" data-copy="ashutoshverma2799@gmail.com">Copy</button>
+        </div>
+        <ul class="contact-links reveal">
           <li><a href="https://linkedin.com/in/ashutosh-verma27" target="_blank" rel="noopener">LinkedIn ↗</a></li>
           <li><a href="https://github.com/ashutoshverma27" target="_blank" rel="noopener">GitHub ↗</a></li>
           <li><a href="tel:+918299446752">+91 82994 46752</a></li>
@@ -378,10 +459,26 @@
       </div>
       <footer class="wrap footer">
         <p>© <span id="year">2026</span> Ashutosh Verma</p>
-        <p>Noida, India</p>
+        <p>Press <kbd data-mod>⌘K</kbd> to jump anywhere</p>
       </footer>
     </section>
   </main>
+
+  <!-- ===== Quick-jump menu ===== -->
+  <div class="cmdk" id="cmdk" role="dialog" aria-modal="true" aria-label="Jump to" hidden>
+    <div class="cmdk-backdrop" data-cmdk-close></div>
+    <div class="cmdk-panel">
+      <div class="cmdk-search">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="cmdk-input" type="text" placeholder="Search sections, projects and links" autocomplete="off" spellcheck="false" aria-controls="cmdk-list" aria-autocomplete="list" />
+        <kbd>esc</kbd>
+      </div>
+      <ul class="cmdk-list" id="cmdk-list" role="listbox"></ul>
+      <p class="cmdk-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span></p>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js" defer></script>
 </body>
