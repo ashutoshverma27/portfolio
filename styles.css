@@ -298,6 +298,40 @@ h1 {
 .tl-main h3 { color: var(--ink); font: 600 1.4rem/1.25 var(--display); letter-spacing: -0.02em; }
 .tl-org { color: var(--body); font-weight: 500; margin-top: 4px; }
 .tl-desc { margin-top: 14px; max-width: 44rem; }
+/* Recognition list inside the Tavant role */
+.honors { margin-top: 24px; max-width: 44rem; }
+.honors-label { color: var(--muted); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px; }
+.honors-list { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; overflow: hidden; }
+.honor {
+  position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px;
+  padding: 14px 18px;
+  transition: background-color .25s;
+}
+.honor + .honor { border-top: 1px solid var(--rule); }
+.honor::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--accent); transform: scaleY(0); transition: transform .35s var(--ease); }
+.honor:hover { background: var(--paper); }
+.honor:hover::before { transform: scaleY(1); }
+.honor-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); transition: transform .45s var(--ease); }
+.honor-icon.cert { background: var(--ink); color: var(--paper); }
+.honor:hover .honor-icon { transform: rotate(-8deg); }
+.honor-icon svg { width: 20px; height: 20px; }
+.honor-title { color: var(--ink); font: 600 0.98rem/1.35 var(--display); letter-spacing: -0.01em; }
+.honor-desc { margin-top: 2px; font-size: 0.88rem; line-height: 1.5; }
+.honor-desc a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule-2); text-underline-offset: 3px; transition: text-decoration-color .2s; }
+.honor-desc a:hover { text-decoration-color: var(--accent); }
+.honor-date { color: var(--muted); font-size: 0.85rem; font-weight: 500; white-space: nowrap; font-variant-numeric: tabular-nums; align-self: start; padding-top: 2px; }
+@media (max-width: 520px) {
+  .honor { gap: 12px; padding: 14px; align-items: start; }
+  .honor-date { font-size: 0.8rem; }
+}
+
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.tags li.certified { display: inline-flex; align-items: center; gap: 6px; border-color: rgba(21, 128, 61, .35); }
+.tags li.certified::before {
+  content: ""; width: 14px; height: 14px; border-radius: 50%; flex: none;
+  background: #15803d url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3.2 3.2L15 7' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 11px no-repeat;
+}
+
 .tl-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .tl-links a {
   display: inline-flex; align-items: center; gap: 6px;
